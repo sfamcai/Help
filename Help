@@ -1,0 +1,66 @@
+
+void uno(int n)
+begin
+	int i,j,a,b,c
+	a=0
+	b=n-2
+	c=n/2+1
+	for(i=1, i<=c, i=i+1)
+		for(j=1, j<=a, j=j+1)
+			write(" ")
+		endfor
+		write("*")
+		for(j=1, j<=b, j=j+1)
+			write(" ")
+		endfor
+		if(i < c)
+                 then
+			writeln("*")
+	    	else
+	    	         writeln(" ")
+		endif
+		a=a+1
+		b=b-2
+	endfor
+end
+
+
+
+
+
+
+
+
+void dos(int n)
+begin
+	int i,j,a,b,c
+	a=n/2
+	b=-1
+	c=a
+	for(i=1, i <=c, i=i+1)
+		for(j=1, j<=a, j=j+1)
+			write(" ")
+		endfor
+		write("*")
+		for(j=1, j<=b, j=j+1)	
+			write(" ")
+		endfor
+		if(i <> 1)
+		then
+			writeln("*")	
+		else
+			writeln(" ")	
+		endif
+		a=a-1
+		b=b+2
+	endfor
+end
+
+int main( )
+begin
+	int n
+	n=5
+	dos(n)
+	uno(n)
+	return 0
+end
